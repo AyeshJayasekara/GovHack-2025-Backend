@@ -1,0 +1,26 @@
+spring:
+  ai:
+    # Connect to your local Ollama
+    ollama:
+      base-url: http://localhost:11434
+      # Auto-pull models on app start (optional)
+      init:
+        pull-model-strategy: always
+        timeout: 120s
+        max-retries: 1
+      chat:
+        options:
+          model: mistral          # pick your chat model
+          temperature: 0.2
+      embedding:
+        # Use your pulled embedding model
+        options:
+          model: nomic-embed-text
+    # Qdrant vector store
+    vectorstore:
+      qdrant:
+        host: localhost
+        port: 6334                     # gRPC port
+        collection-name: docs_nomic
+        use-tls: false
+        initialize-schema: true        # auto create collection at startup

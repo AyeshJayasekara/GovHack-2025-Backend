@@ -1,0 +1,128 @@
+This dataset provides a detailed record of Freedom of Information (FOI) requests and their processing across Australian government agencies. It captures comprehensive quarterly and annual statistics, including requests received, outcomes, internal reviews, exemptions applied, charges, and disclosure log activity. The dataset serves as a critical resource for analyzing transparency, accountability, and efficiency in government information management.
+Each row corresponds to a reporting period for a specific agency, including general administrative fields such as Report year, Quarter, Agency, and Administrating agency name, which identify the reporting entity and the relevant time frame. The Is agency active field indicates whether the agency was operational during the reporting period, and Date created marks when the report entry was generated.
+Operational data include the number and type of FOI requests received, transferred, granted, refused, withdrawn, or responded to. Separate columns track personal and other requests, their timeliness, and responses categorized by how late they were processed. This level of detail allows for the assessment of agency performance in handling information requests and adherence to statutory timelines.
+The dataset also records financial aspects, such as Total charges notified and Total charges collected, reflecting the administrative cost of processing requests. Internal review information is included, detailing the number of applications, outcomes, and whether decisions were fully or partially granted, or granted after deferment or in alternative forms.
+Exemption claims are comprehensively tracked through sections 33, 34, 37, 38, 42, 45, 45A, 46, and 47 series, allowing insight into the legal grounds used to withhold information. Section 48 requests, which involve amending or annotating personal records, are also included.
+Finally, disclosure log activity provides information on the number of log entries, unique visitors, page views, and alternative access explanations. These data points allow agencies to monitor public access to information and evaluate the effectiveness of disclosure practices.
+Overall, this dataset offers a rich resource for researchers, policymakers, and auditors interested in government transparency, FOI performance, and public accountability. It provides a structured view of how agencies manage requests, exercise discretion through exemptions, and facilitate access to information.
+
+The table contains following columns:
+Column Data Type Description
+Report year String Financial year the report relates to (e.g. 2015 - 2016)
+Quarter Integer Reporting quarter (1�4)
+Agency String Name of the government agency or minister reporting
+Is agency active Boolean Indicates whether the agency was active during the reporting period
+Administrating agency name String Name of the overarching department administering the agency
+Portfolio String Government portfolio the agency belongs to
+Nil return Boolean Indicates if no requests were received during the period
+Last return by agency Boolean Indicates if this was the last return submitted by the agency for the reporting year
+Date created Date Date the report entry was created
+Personal requests received from applicants Integer Number of personal requests submitted by applicants
+Other requests received from applicants Integer Number of other types of requests submitted by applicants
+Personal requests on transfer Integer Number of personal requests transferred to another agency
+Other requests on transfer Integer Number of other requests transferred to another agency
+Personal requests on hand 1 July 2015 Integer Number of personal requests pending at the start of the reporting period
+Other requests on hand 1 July 2015 Integer Number of other requests pending at the start of the reporting period
+Personal requests granted in full Integer Number of personal requests fully granted
+Other requests granted in full Integer Number of other requests fully granted
+Personal requests granted in part Integer Number of personal requests partially granted
+Other requests granted in part Integer Number of other requests partially granted
+Personal requests refused Integer Number of personal requests refused
+Other requests refused Integer Number of other requests refused
+Personal requests transferred Integer Number of personal requests transferred
+Other requests transferred Integer Number of other requests transferred
+Personal requests withdrawn Integer Number of personal requests withdrawn by applicants
+Other requests withdrawn Integer Number of other requests withdrawn by applicants
+Personal requests responded to in time Integer Number of personal requests responded to within statutory timeframes
+Other requests responded to in time Integer Number of other requests responded to within statutory timeframes
+Personal requests responded to up to 30 days out of time Integer Number of personal requests responded to 1�30 days late
+Other requests responded to up to 30 days out of time Integer Number of other requests responded to 1�30 days late
+Personal requests responded to 31 to 60 days out of time Integer Number of personal requests responded to 31�60 days late
+Other requests responded to 31 to 60 days out of time Integer Number of other requests responded to 31�60 days late
+Personal requests responded to 61 to 90 days out of time Integer Number of personal requests responded to 61�90 days late
+Other requests responded to 61 to 90 days out of time Integer Number of other requests responded to 61�90 days late
+Personal requests responded to over 90 days out of time Integer Number of personal requests responded to more than 90 days late
+Other requests responded to over 90 days out of time Integer Number of other requests responded to more than 90 days late
+Personal requests where charges notified Integer Number of personal requests where applicants were notified of charges
+Other requests where charges notified Integer Number of other requests where applicants were notified of charges
+Total charges notified for personal requests AUD Decimal Total fees notified to applicants for personal requests (AUD)
+Total charges notified for other requests AUD Decimal Total fees notified to applicants for other requests (AUD)
+Total charges collected for personal requests AUD Decimal Total fees collected from applicants for personal requests (AUD)
+Total charges collected for other requests AUD Decimal Total fees collected from applicants for other requests (AUD)
+Internal review applications for personal requests Integer Number of internal review applications received for personal requests
+Internal review applications for other requests Integer Number of internal review applications received for other requests
+Internal review decisions affirmed for personal requests Integer Number of internal review decisions that upheld the original decision for personal requests
+Internal review decisions affirmed for other requests Integer Number of internal review decisions that upheld the original decision for other requests
+Internal review access granted in full for personal requests Integer Number of internal reviews granting full access for personal requests
+Internal review access granted in full for other requests Integer Number of internal reviews granting full access for other requests
+Internal review access granted in part for personal requests Integer Number of internal reviews granting partial access for personal requests
+Internal review access granted in part for other requests Integer Number of internal reviews granting partial access for other requests
+Internal review access grant after deferment personal requests Integer Number of personal requests granted after temporary deferral
+Internal review access grant after deferment other requests Integer Number of other requests granted after temporary deferral
+Internal review access grant in another form personal requests Integer Number of personal requests granted access in an alternative form
+Internal review access grant in another form other requests Integer Number of other requests granted access in an alternative form
+Internal review charges reduced for personal requests Integer Number of personal request charges reduced after internal review
+Internal review charges reduced for other requests Integer Number of other request charges reduced after internal review
+Internal review personal requests withdrawn without concession Integer Number of personal requests withdrawn without any concession during review
+Internal review other requests withdrawn without concession Integer Number of other requests withdrawn without any concession during review
+s 48 requests received Integer Requests received under section 48 of the legislation
+s 48 requests responded to in time Integer Section 48 requests responded to within statutory timeframe
+s 48 requests responded to up to 30 days out of time Integer Section 48 requests responded to 1�30 days late
+s 48 requests responded to over 30 days out of time Integer Section 48 requests responded to more than 30 days late
+s 48 request granted record altered Integer Section 48 requests where records were altered and granted
+s 48 request granted record notated Integer Section 48 requests where records were notated and granted
+s 48 request granted record altered and notated Integer Section 48 requests where records were both altered and notated
+s 48 requests refused Integer Section 48 requests refused
+s 48 internal review applications Integer Number of internal review applications under section 48
+s 48 internal review granted record altered Integer Internal review under s48 granted with record altered
+s 48 internal review granted record notated Integer Internal review under s48 granted with record notated
+s 48 internal review granted record altered and notated Integer Internal review under s48 granted with record both altered and notated
+s 48 internal review application refused Integer Internal review application under s48 refused
+Practical refusal notification personal request Integer Number of practical refusal notifications for personal requests
+Practical refusal notification other request Integer Number of practical refusal notifications for other requests
+Practical refusal subsequently processed personal request Integer Number of personal requests processed after practical refusal
+Practical refusal subsequently processed other request Integer Number of other requests processed after practical refusal
+Personal requests where no exemption claimed Integer Number of personal requests where no exemption was claimed
+Other requests where no exemptions claimed Integer Number of other requests where no exemption was claimed
+Personal requests where s 33 claimed Integer Number of personal requests with s33 exemption claimed
+Other requests where s 33 claimed Integer Number of other requests with s33 exemption claimed
+Personal requests where s 34 claimed Integer Number of personal requests with s34 exemption claimed
+Other requests where s 34 claimed Integer Number of other requests with s34 exemption claimed
+Personal requests where s 37 claimed Integer Number of personal requests with s37 exemption claimed
+Other requests where s 37 claimed Integer Number of other requests with s37 exemption claimed
+Personal requests where s 38 claimed Integer Number of personal requests with s38 exemption claimed
+Other requests where s 38 claimed Integer Number of other requests with s38 exemption claimed
+Personal requests where s 42 claimed Integer Number of personal requests with s42 exemption claimed
+Other requests where s 42 claimed Integer Number of other requests with s42 exemption claimed
+Personal requests where s 45 claimed Integer Number of personal requests with s45 exemption claimed
+Other requests where s 45 claimed Integer Number of other requests with s45 exemption claimed
+Personal requests where s 45A claimed Integer Number of personal requests with s45A exemption claimed
+Other requests where s 45A claimed Integer Number of other requests with s45A exemption claimed
+Personal requests where s 46 claimed Integer Number of personal requests with s46 exemption claimed
+Other requests where s 46 claimed Integer Number of other requests with s46 exemption claimed
+Personal requests where s 47 claimed Integer Number of personal requests with s47 exemption claimed
+Other requests where s 47 claimed Integer Number of other requests with s47 exemption claimed
+Personal requests where s 47A claimed Integer Number of personal requests with s47A exemption claimed
+Other requests where s 47A claimed Integer Number of other requests with s47A exemption claimed
+Personal requests where s 47B claimed Integer Number of personal requests with s47B exemption claimed
+Other requests where s 47B claimed Integer Number of other requests with s47B exemption claimed
+Personal requests where s 47C claimed Integer Number of personal requests with s47C exemption claimed
+Other requests where s 47C claimed Integer Number of other requests with s47C exemption claimed
+Personal requests where s 47D claimed Integer Number of personal requests with s47D exemption claimed
+Other requests where s 47D claimed Integer Number of other requests with s47D exemption claimed
+Personal requests where s 47E claimed Integer Number of personal requests with s47E exemption claimed
+Other requests where s 47E claimed Integer Number of other requests with s47E exemption claimed
+Personal requests where s 47F claimed Integer Number of personal requests with s47F exemption claimed
+Other requests where s 47F claimed Integer Number of other requests with s47F exemption claimed
+Personal requests where s 47G claimed Integer Number of personal requests with s47G exemption claimed
+Other requests where s 47G claimed Integer Number of other requests with s47G exemption claimed
+Personal requests where s 47H claimed Integer Number of personal requests with s47H exemption claimed
+Other requests where s 47H claimed Integer Number of other requests with s47H exemption claimed
+Personal requests where s 47J claimed Integer Number of personal requests with s47J exemption claimed
+Other requests where s 47J claimed Integer Number of other requests with s47J exemption claimed
+Disclosure log listing links to information on same website Integer Number of disclosure log entries linking to same website
+Disclosure log listing links to information on another website Integer Number of disclosure log entries linking to other websites
+Disclosure log listing explains other means of access Integer Number of disclosure log entries explaining alternative access methods
+Disclosure log unique visitors Integer Number of unique visitors to the disclosure log
+Disclosure log page views Integer Number of page views of the disclosure log
+Disclosure log webstats not collected Boolean Indicates if web statistics were not collected for the disclosure log

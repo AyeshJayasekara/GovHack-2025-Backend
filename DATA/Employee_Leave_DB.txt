@@ -1,0 +1,21 @@
+This dataset provides a comprehensive view of employee leave management across various departments within an organization. It tracks individual employee leave records, including the type, duration, and timing of leaves taken throughout the year. The dataset is designed to help HR professionals, managers, and analysts monitor leave patterns, assess workforce availability, and plan resources effectively.
+Each row in the dataset corresponds to a single leave instance for an employee. Key columns include Employee, Department, and Position, which identify the staff member, their organizational unit, and job role. These fields allow for analysis of leave trends across departments, teams, or positions, helping organizations understand which groups are taking more or fewer leaves and identify potential staffing gaps.
+The dataset also includes detailed leave information, such as Leave Type, Start Date, and End Date, providing the exact duration and category of leave taken. Common leave types include sick leave, casual leave, maternity leave, and other categories depending on organizational policies. The Days Taken column quantifies the length of each leave, which can be used to calculate total absenteeism or track compliance with company leave policies.
+Employee leave entitlements and usage are captured through the Total Leave, Leave Taken, and Remaining Leave columns. These fields enable organizations to track whether employees are within their allotted leave limits, identify leave deficits, and plan for accrued leave payouts or compensatory measures. The Month column indicates when the leave occurred, which allows analysis of seasonal leave trends or peak absenteeism periods.
+Overall, this dataset offers valuable insights into employee behavior, resource allocation, and HR management practices. By analyzing these records, organizations can detect patterns such as frequent short-term absences, department-specific leave trends, and overall utilization of leave entitlements. The dataset is particularly useful for developing predictive models for staffing needs, planning workforce allocation, and supporting policy decisions related to leave management.
+In summary, the Employee Leave Tracking dataset is a structured and detailed resource that enables data-driven HR management, supports operational efficiency, and provides visibility into employee attendance and leave practices across an organization.
+
+The table contains following columns:
+
+Column  Data Type  Description
+Employee  Varchar   The name of the employee.
+Department  Varchar  " The department to which the employee belongs (e.g., IT, HR, Finance)."
+Position  Varchar  " The job title of the employee (e.g., Software Engineer, HR Manager)."
+Leave Type  Varchar  " The type of leave taken (e.g., Sick Leave, Maternity Leave, Casual Leave)."
+Start Date  Date and time   The starting date of the leave.
+End Date  Date and time   The ending date of the leave.
+Days Taken  int   The number of days the leave lasted.
+Total Leave  int   The total leave entitlement of the employee for the year.
+Leave Taken  int   The cumulative number of leave days taken by the employee so far.
+Remaining Leave  int   The remaining leave balance for the employee.
+Month  int   The month in which the leave occurred.
