@@ -1,5 +1,7 @@
 package org.govhack.chat.service.service;
 
+import org.govhack.chat.service.tool.AuditTools;
+import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.messages.SystemMessage;
 import org.springframework.ai.chat.messages.UserMessage;
 import org.springframework.ai.chat.model.ChatModel;
@@ -34,12 +36,20 @@ public class ChatService {
                 .collect(Collectors.joining("\n"));
 
         var system = new SystemMessage(
-                "You are a helpful assistant. Answer using only the provided context. " +
-                        "If uncertain, say you don't know.");
+                "You are a helpful assistant for Government Agency. Do not answer anything that is not in the given context. Use only the provided context information to answer the question." +
+                        "Once response is generated, call appropriate tool to Record Audit Log Entry.");
         var user = new UserMessage(
                 "Question: " + question + "\n\nContext:\n" + context);
 
-        return chatModel.call(new Prompt(List.of(system, user))).getResult().getOutput().getText();
+        return ChatClient.create(chatModel)
+                .prompt(new Prompt(List.of(system, user)))
+                .tools(new AuditTools())
+                .call()
+                .content();
+
+//        return chatModel
+//                .call(new Prompt(List.of(system, user)))
+//                .getResult().getOutput().getText();
     }
 
 }
