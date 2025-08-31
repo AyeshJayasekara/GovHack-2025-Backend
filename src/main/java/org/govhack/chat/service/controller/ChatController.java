@@ -12,9 +12,9 @@ public class ChatController {
         this.ragService = ragService;
     }
 
-    @GetMapping("/ask")
-    public ResponseEntity<String> ask(@RequestParam String q,
+    @PostMapping("/ask")
+    public ResponseEntity<String> ask(@RequestBody String question,
                                       @RequestParam(defaultValue = "5") int k) {
-        return ResponseEntity.ok(ragService.answer(q, k));
+        return ResponseEntity.ok(ragService.answer(question, k));
     }
 }

@@ -1,0 +1,79 @@
+Summary of Australian Government Procurement Data (2023-24)
+
+Following information are obtained by: https://www.finance.gov.au/government/procurement/statistics-australian-government-procurement-contracts- on 31 of August 2025.
+
+1. General Procurement Overview:
+
+Total Value & Volume: In the 2023-24 financial year, there were 83,453 contracts published on AusTender with a combined value of $99.6 billion. This represents the highest-ever reported value on AusTender.
+
+Data Source: The data is extracted from AusTender, the Australian Government’s procurement information system, and reflects contractual information reported by Commonwealth entities. Contract values represent the total maximum value over the life of the contract, not annual expenditure.
+
+2. Key Trends and Statistics:
+
+Value and Volume Trends (Historical):
+
+The total value of procurement contracts has fluctuated over the past decade, with a significant increase in 2023-24.
+
+The volume of contracts has shown a general upward trend, reaching a peak in 2021-22 and remaining high in 2023-24.
+
+Procurement Thresholds (2023-24):
+
+Contracts below $80k: Account for 51.91% of the total number of contracts (43,320 contracts) but only 1.38% of the total value ($1.37 billion).
+
+Contracts at $20m and above: Account for only 0.60% of the total number of contracts (498 contracts) but represent the largest share of value at 67.10% ($66.86 billion).
+
+Supplier Location:
+
+Australian Businesses: 94.1% of contracts by volume and 77.0% by value were awarded to businesses with an Australian address.
+
+Overseas Suppliers: Made up 5.93% of the contract volume (4,946 contracts) and 22.97% of the total value ($22.88 billion).
+
+Goods & Services:
+
+Value (2023-24): Services accounted for 52.35% of the total value ($52.16 billion), and goods accounted for 47.65% ($47.48 billion). This shows a notable shift towards a more even split compared to previous years where services consistently held a larger proportion.
+
+Volume (2023-24): The majority of contracts by volume were for services (71.24%), while goods made up 28.76%.
+
+Top 20 Categories (by value): Military-related procurements dominate the list, with "Military fixed wing aircraft" being the highest at $9.21 billion (9.24% of total value). Other top categories include building construction, war vehicles, computer services, and various military and professional services.
+
+Top 10 Entities (by value):
+
+The Department of Defence is the largest procuring entity by a significant margin, accounting for 67.44% of the total value ($67.20 billion).
+
+The top 10 entities together represent 87.51% of the total procurement value.
+
+3. Small and Medium Enterprise (SME) Participation:
+
+SME Definition (2023-24): An Australian or New Zealand firm with fewer than 200 full-time equivalent employees. A small business has fewer than 20 employees. A new, stricter definition including associated entities was applied from July 1, 2024.
+
+Targets (2023-24): The targets for non-corporate entities were:
+
+20% of contracts, by value, from SMEs.
+
+35% of contracts, by value, from SMEs for contracts up to $20 million.
+
+Estimated Participation (2023-24, All contracts):
+
+Value: SMEs were awarded 18.8% of the total contract value ($18.75 billion). This is below the 20% target.
+
+Volume: SMEs were awarded 52.3% of the total number of contracts (43,642 contracts).
+
+Impact of High-Value Procurements: The high value of Department of Defence contracts for specialized goods (e.g., aircrafts, missiles) significantly distorted the overall performance against the SME target.
+
+Excluding Department of Defence: When Defence contracts are excluded, SME participation in 2023-24 reached 35% of contract value, aligning with the target for contracts up to $20 million.
+
+4. Policy and Rule Changes (Effective July 1, 2024):
+
+SME Targets:
+
+Target one increased to 25% (for contracts up to $1 billion).
+
+Target two increased to 40% (for contracts up to $20 million).
+
+The new targets exclude contracts valued at or above $1 billion to remove the distorting effect of very high-value procurements.
+
+Economic Benefits Threshold: The non-construction services threshold for considering economic benefits to the Australian economy was reduced from $4 million to $1 million.
+
+Appendix A Exemptions: The limited tender exemption for SMEs was increased to $500,000 or less for all Commonwealth entities (previously $200,000, with a higher limit for Defence).
+
+Panel Policies: New rules mandate that entities must include at least one SME in every approach to the Management Advisory Services and People Panels.

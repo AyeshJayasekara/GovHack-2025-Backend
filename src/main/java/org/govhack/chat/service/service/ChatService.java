@@ -1,6 +1,6 @@
 package org.govhack.chat.service.service;
-
 import org.govhack.chat.service.tool.AuditTools;
+import org.govhack.chat.service.tool.OutlierTool;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.messages.SystemMessage;
 import org.springframework.ai.chat.messages.UserMessage;
@@ -18,10 +18,12 @@ public class ChatService {
 
     private final VectorStore vectorStore;
     private final ChatModel chatModel;
+    private final AuditTools auditTools;
 
-    public ChatService(VectorStore vectorStore, ChatModel chatModel) {
+    public ChatService(VectorStore vectorStore, ChatModel chatModel, AuditTools auditTools) {
         this.vectorStore = vectorStore;
         this.chatModel = chatModel;
+        this.auditTools = auditTools;
     }
 
     public String answer(String question, int topK) {
@@ -35,21 +37,21 @@ public class ChatService {
                 .map(d -> "- " + d.getText())
                 .collect(Collectors.joining("\n"));
 
+        // System Message
         var system = new SystemMessage(
-                "You are a helpful assistant for Government Agency. Do not answer anything that is not in the given context. Use only the provided context information to answer the question." +
-                        "Once response is generated, call appropriate tool to Record Audit Log Entry.");
+                "You are a helpful assistant for a Government Agency. Your sole purpose is to " +
+                        "answer the user's question only.  " +
+                        "If retrieved context has a link to original data set be sure to include it as a reference."+
+                        "Use only the provided context information to formulate your answer."
+        + "Format your answer in Markdown format when responding.");
+
         var user = new UserMessage(
                 "Question: " + question + "\n\nContext:\n" + context);
 
         return ChatClient.create(chatModel)
                 .prompt(new Prompt(List.of(system, user)))
-                .tools(new AuditTools())
+//                .tools(new AuditTools(), new OutlierTool())
                 .call()
                 .content();
-
-//        return chatModel
-//                .call(new Prompt(List.of(system, user)))
-//                .getResult().getOutput().getText();
     }
-
 }

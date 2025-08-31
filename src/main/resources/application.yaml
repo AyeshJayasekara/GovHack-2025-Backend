@@ -10,7 +10,8 @@ spring:
         max-retries: 1
       chat:
         options:
-          model: mistral          # pick your chat model
+#          model: mistral          # pick your chat model
+          model: phi3:mini          # pick your chat model
           temperature: 0.2
       embedding:
         # Use your pulled embedding model
@@ -21,6 +22,6 @@ spring:
       qdrant:
         host: localhost
         port: 6334                     # gRPC port
-        collection-name: docs_nomic
+        collection-name: docs_nomic_test2
         use-tls: false
         initialize-schema: true        # auto create collection at startup
