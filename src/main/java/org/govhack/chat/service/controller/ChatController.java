@@ -1,8 +1,12 @@
 package org.govhack.chat.service.controller;
 
+import org.govhack.chat.service.dto.ResponseDTO;
 import org.govhack.chat.service.service.ChatService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+
+
 
 @CrossOrigin(
         origins = "http://localhost:8081",   // your React dev origin
@@ -20,8 +24,12 @@ public class ChatController {
     }
 
     @PostMapping("/ask")
-    public ResponseEntity<String> ask(@RequestBody String question,
+    public ResponseEntity<ResponseDTO> ask(@RequestBody String question,
                                       @RequestParam(defaultValue = "5") int k) {
-        return ResponseEntity.ok(ragService.answer(question, k));
+
+        String answer = ragService.answer(question, k);
+        return ResponseEntity.ok(new ResponseDTO(answer));
+
+        //return ResponseEntity.ok(ragService.answer(question, k));
     }
 }

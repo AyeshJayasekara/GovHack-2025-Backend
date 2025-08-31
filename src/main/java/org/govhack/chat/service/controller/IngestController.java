@@ -17,7 +17,7 @@ public class IngestController {
 
     @PostMapping("/ingest")
     public ResponseEntity<String> ingest() throws Exception {
-        int n = ingestService.ingestFolder(Path.of("/Users/ayeshj/Desktop/GovHack-2025-Backend/DATA"));
+        int n = ingestService.ingestFolder(Path.of("/Users/jana/Projects/Gov-Hack/GovHack-2025-Backend/DATA"));
         return ResponseEntity.ok("Indexed " + n + " chunks");
     }
 }
