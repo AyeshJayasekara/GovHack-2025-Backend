@@ -4,6 +4,13 @@ import org.govhack.chat.service.service.ChatService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin(
+        origins = "http://localhost:8081",   // your React dev origin
+        allowedHeaders = "*",
+        methods = { RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE, RequestMethod.OPTIONS },
+        allowCredentials = "true",
+        exposedHeaders = { "Content-Type" }
+)
 @RestController
 public class ChatController {
     private final ChatService ragService;
